@@ -1,0 +1,67 @@
+1. What is the first step an analyst should take before opening a dataset to investigate flat revenue despite increased traffic?
+	1. The Pre-Analysis:- 
+	First Step:-
+		An analyst should formulate a clear hypothesis before opening the data.
+		For a scenario with increased traffic but flat revenue, 
+		the analyst should brainstorm likely failure points in the conversion funnel. 
+		This prevents directionless "data fishing" and structures the investigation.
+		Conversion Drop: Is higher traffic bringing low-quality visitors who do not buy?Pricing/Discounting: Did average order values drop due to heavy promotional discounts?
+		Technical Issues: Is a broken checkout page causing high cart abandonment?
+
+
+2. What specific characteristics distinguish a "Key Performance Indicator" (KPI) from a standard business metric?
+	Feature    	Standard Business Metric         			Key Performance Indicator (KPI)
+
+	Focus	    	Tracks general business activity.			Measures progress toward core strategic goals.
+	Actionability 	Informational; does not immediately trigger changes. 	Triggers immediate action if targets are missed.
+	Context		Raw volume or standalone counts.			Often a ratio or rate with a defined target/benchmark.
+	Example		Total Page Views.					Conversion Rate.
+
+
+3. Classify Average Order Value (AOV) and Customer Repeat Rate as either Descriptive or Diagnostic KPIs and state the questions they answer.
+
+	Average Order Value (AOV): 
+		Diagnostic KPIQuestion Answered: "How much are customers spending per transaction?" 
+		It diagnoses why revenue might be flat (e.g., traffic is up, but people are buying cheaper items).
+
+	Customer Repeat Rate: 
+		Diagnostic KPIQuestion Answered: "Are we retaining existing customers or relying entirely on new traffic?" 
+		It diagnoses the health of customer loyalty and long-term revenue sustainability.
+
+
+4. Provide one justified reason to choose Excel and one reason to choose PowerBI for analyzing Monthly Revenue.
+	Why choose Excel: 
+		It is ideal for ad-hoc, flexible modeling and rapid prototyping. 
+		If an executive needs a quick, one-off financial forecast or manual adjustments to monthly numbers, 
+		Excel’s cell-level editing and pivot tables are faster to deploy without setting up a formal data infrastructure.
+
+	Why choose Power BI: 
+		It is ideal for automated, scalable dashboarding and multi-source integration. 
+		Power BI handles millions of rows effortlessly, schedules automatic data refreshes, 
+		secures data with role-based access, and allows interactive filtering across complex, related data tables.
+
+
+5. Is "Number of Customers" a valid Diagnostic KPI for revenue trends? Justify by comparing Descriptive vs. Diagnostic logic.
+	No, "Number of Customers" is not a valid Diagnostic KPI; it is a Descriptive metric.
+
+	Descriptive logic:- 
+		tells you what happened. "Number of Customers" simply counts the volume of unique purchasers in a given timeframe. 
+		It states a result.
+
+	Diagnostic logic:-
+		tells you why it happened. 
+		To make it diagnostic, 
+		it must be transformed into a rate or ratio—such as Customer Acquisition Rate or Churn Rate—which explains the underlying momentum causing the revenue trend to shift.
+
+
+6. Why is treating raw data columns (like UnitPrice) as KPIs incorrect, and what transformation steps are required to create a meaningful KPI?
+	Treating a raw column like UnitPrice as a KPI is incorrect because raw data lacks aggregation, time context, and business performance benchmarks. 
+	A single row's unit price does not tell you if the business is succeeding overall.
+	To transform UnitPrice into a meaningful KPI, an analyst must follow these three steps:
+	Aggregate: 
+		Combine the raw column with other data to create a metric (e.g., UnitPrice \(\times \) Quantity = Total Revenue).
+	Contextualise: 
+		Filter or group the aggregation over a defined period (e.g., Monthly Total Revenue).
+	Benchmark: 
+		Compare the final calculation against a target, budget, or prior period (e.g., Monthly Revenue vs. Target %). 
+		This final step creates the true KPI.
